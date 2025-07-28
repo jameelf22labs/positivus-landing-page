@@ -1,0 +1,35 @@
+.heroContainer {
+  margin-top: 10px;
+  display: flex;
+  max-width: 90rem;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  padding: calc(var(--spacing) * 4);
+}
+
+.consultSection {
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.consultSection h1 {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.bannerSection {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.bannerSection img {
+    max-width: 100%;
+    height: auto;
+}
