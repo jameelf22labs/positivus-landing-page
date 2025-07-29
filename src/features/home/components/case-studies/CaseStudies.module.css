@@ -2,26 +2,67 @@
   margin-top: 50px;
   display: flex;
   gap: 20px;
-  width: 1344px;
-  height: 326px;
-  padding-top: 70px;
-  padding-right: 60px;
-  padding-bottom: 70px;
-  padding-left: 60px;
+  flex-wrap: wrap;
+  padding: 3.5rem 3rem;
   background-color: #191a23;
   color: white;
   border-radius: 45px;
+  width: 100%;
+  max-width: 1344px;
+  box-sizing: border-box;
 }
 
 .study {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
 }
 
+.study p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 
 .study a {
-    font-weight: 400px;
-    color: #B9FF66;
-    font-size: 20px;
+  font-weight: 500;
+  color: #b9ff66;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.study a:hover {
+  color: #a3e84c;
+}
+
+@media (max-width: 1024px) {
+  .studieWrapper {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .study {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .study p {
+    font-size: 0.95rem;
+  }
+
+  .study a {
+    font-size: 0.95rem;
+  }
+
+  .studieWrapper {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
 }

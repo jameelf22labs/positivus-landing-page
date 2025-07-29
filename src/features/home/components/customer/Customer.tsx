@@ -1,12 +1,12 @@
 import type { JSX } from "react";
 import React from "react";
 
-import amazon from "../,,/../../assets/images/amazon.svg";
-import dribble from "../,,/../../assets/images/dribble.svg";
-import hubspot from "../,,/../../assets/images/hubspot.svg";
-import notion from "../,,/../../assets/images/notion.svg";
-import netflix from "../,,/../../assets/images/netflix.svg";
-import zoom from "../,,/../../assets/images/zoom.svg";
+import amazon from "../../../../assets/images/amazon.svg";
+import dribble from "../../../../assets/images/dribble.svg";
+import hubspot from "../../../../assets/images/hubspot.svg";
+import notion from "../../../../assets/images/notion.svg";
+import netflix from "../../../../assets/images/netflix.svg";
+import zoom from "../../../../assets/images/zoom.svg";
 
 const Customer = (): JSX.Element => {
   const customers = React.useMemo(() => {
