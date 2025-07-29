@@ -2,6 +2,9 @@ import type { JSX } from "react";
 import React from "react";
 import Style from "./Service.module.css";
 import GlobalStyle from "../../../../style/global.style.module.css";
+import ServiceCard from "./ServiceCard";
+import { SectionLabel } from "../../../../common/components";
+import { Button } from "../../../../common/ui";
 
 import seo from "../../../../assets/images/seo.png";
 import ppca from "../../../../assets/images/ppca.png";
@@ -9,8 +12,7 @@ import smm from "../../../../assets/images/smm.png";
 import em from "../../../../assets/images/em.png";
 import aat from "../../../../assets/images/aat.png";
 import cc from "../../../../assets/images/cc.png";
-import ServiceCard from "./ServiceCard";
-import { SectionLabel } from "../../../../common/components";
+import ContentBanner from "../../../../assets/images/content-banner.png";
 
 const Service = (): JSX.Element => {
   const services = React.useMemo(() => {
@@ -71,6 +73,23 @@ const Service = (): JSX.Element => {
               />
             );
           })}
+        </div>
+
+        <div className={Style.proposalContainer}>
+          <div className={Style.content}>
+            <h3>Let’s make things happen</h3>
+
+            <p>
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+
+            <Button className="mt-5"> Get your free proposal </Button>
+          </div>
+
+          <div className={Style.contentBanner}>
+            <img src={ContentBanner} alt="Content Banner" />
+          </div>
         </div>
       </div>
     </React.Fragment>
