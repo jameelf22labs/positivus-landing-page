@@ -27,7 +27,7 @@
 .bannerContainer img {
   max-width: 100%;
   height: auto;
-  margin-left: 0;
+  margin-left: 600px;
 }
 
 .formInnerContainer {
@@ -98,6 +98,11 @@ input[type="checkbox"] {
 
   .bannerContainer {
     margin-top: 20px;
+    display: none;
+  }
+
+  .bannerContainer img {
+    margin-left: 0;
   }
 }
 

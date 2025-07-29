@@ -47,7 +47,7 @@
 .contactWrapper {
   display: flex;
   margin-top: 50px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -103,13 +103,12 @@
   border-top: 3px solid white;
   margin-top: 60px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding-top: 20px;
   text-align: center;
 }
-
 
 @media (max-width: 1024px) {
   .footerNavbarWrapper {
@@ -122,7 +121,6 @@
     justify-content: center;
   }
 }
-
 
 @media (max-width: 768px) {
   .footerWrapper {
@@ -142,10 +140,10 @@
   }
 
   .emailFormInnerWrapper input {
+    flex: 1 1 0px;
     text-align: center;
   }
 }
-
 
 @media (max-width: 480px) {
   .footerWrapper {
