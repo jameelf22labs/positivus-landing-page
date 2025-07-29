@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import React from "react";
 import Style from "./Home.module.css";
 import { Navbar } from "../../layouts";
-import { Customer, Hero } from "./components";
+import { Customer, Hero, Service } from "./components";
 
 import amazon from "../,,/../../assets/images/amazon.svg";
 import dribble from "../,,/../../assets/images/dribble.svg";
@@ -27,6 +27,7 @@ const Home = (): JSX.Element => {
             { imageUrl: zoom },
           ]}
         />
+        <Service />
       </div>
     </React.Fragment>
   );
