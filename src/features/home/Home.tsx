@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import React from "react";
 import Style from "./Home.module.css";
 import { Navbar } from "../../layouts";
-import { CaseStudies, Customer, Hero, Service } from "./components";
+import { CaseStudies, Customer, Hero, OurWorkingProcess, Service } from "./components";
 
 import amazon from "../,,/../../assets/images/amazon.svg";
 import dribble from "../,,/../../assets/images/dribble.svg";
@@ -29,6 +29,7 @@ const Home = (): JSX.Element => {
         />
         <Service />
         <CaseStudies />
+        <OurWorkingProcess />
       </div>
     </React.Fragment>
   );

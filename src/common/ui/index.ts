@@ -1,4 +1,5 @@
-import Accordion from "./accordion/Accordion";
+
+import CustomAccordion from "./accordion/CustomAccordion";
 import Button from "./button/Button";
 
-export { Accordion, Button };
+export {  Button , CustomAccordion };
