@@ -5,7 +5,6 @@
 }
 
 .label {
-    width: 178px;
     height: 51px;
     border-radius: 7px;
     padding-left: 7px;
@@ -21,4 +20,5 @@
 .desc {
     max-width: 550px;
     text-align: left;
+    margin-left: 30px;
 }
