@@ -1,0 +1,80 @@
+.formWrapper {
+  width: 1340px;
+  height: 773px;
+  border-radius: 45px;
+  padding-top: 60px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+  padding-left: 100px;
+  background-color: #f3f3f3;
+  margin-top: 30px;
+  display: flex;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.bannerContainer {
+  flex: 1;
+}
+
+.bannerContainer img {
+    margin-left: 370px;
+}
+
+.formInnerContainer {
+  width: 500px;
+  height: 633px;
+  margin: 20px auto;
+}
+
+.checkBoxWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.checkBoxWrapper span {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  appearance: none;
+  border: 2px solid #555;
+  cursor: pointer;
+  position: relative;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.inputField label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.inputField input {
+  border-radius: 14px;
+  border: 1px solid #000000;
+  padding: 18px 30px 18px 30px;
+  background-color: #ffffff;
+}
+
+.inputField textarea {
+  border-radius: 14px;
+  border: 1px solid #000000;
+  padding: 18px 30px 18px 30px;
+  background-color: #ffffff;
+}

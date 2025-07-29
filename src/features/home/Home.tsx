@@ -4,6 +4,7 @@ import Style from "./Home.module.css";
 import { Navbar } from "../../layouts";
 import {
   CaseStudies,
+  ContactUs,
   Customer,
   Hero,
   OurWorkingProcess,
@@ -19,25 +20,27 @@ import netflix from "../,,/../../assets/images/netflix.svg";
 import zoom from "../,,/../../assets/images/zoom.svg";
 
 const Home = (): JSX.Element => {
+  const customers = React.useMemo(() => {
+    return [
+      { imageUrl: amazon },
+      { imageUrl: dribble },
+      { imageUrl: hubspot },
+      { imageUrl: notion },
+      { imageUrl: netflix },
+      { imageUrl: zoom },
+    ];
+  }, []);
   return (
     <React.Fragment>
       <div className={Style.homeContainer}>
         <Navbar />
         <Hero />
-        <Customer
-          customers={[
-            { imageUrl: amazon },
-            { imageUrl: dribble },
-            { imageUrl: hubspot },
-            { imageUrl: notion },
-            { imageUrl: netflix },
-            { imageUrl: zoom },
-          ]}
-        />
+        <Customer customers={customers} />
         <Service />
         <CaseStudies />
         <OurWorkingProcess />
         <Team />
+        <ContactUs />
       </div>
     </React.Fragment>
   );
