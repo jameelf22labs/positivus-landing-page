@@ -48,6 +48,7 @@ const ContactUs = (): JSX.Element => {
             </Button>
           </div>
         </div>
+
         <div className={Style.bannerContainer}>
           <img src={ContactUsLogo} alt="Contact us" />
         </div>
