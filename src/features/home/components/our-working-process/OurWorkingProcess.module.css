@@ -1,32 +1,89 @@
-
 .accordionWrapper {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .accordionPanel {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .accordionPanel h1 {
-    font-weight: 500;
-    font-size: 60px;
-    color: #000000;
-}
-
-
-.accordionContent {
-    padding: 20px;
-
+  font-weight: 500;
+  font-size: 60px;
+  color: #000000;
 }
 
 .accordionPanel p {
-    font-weight: 500;
-    font-size: 30px;
+  font-weight: 500;
+  font-size: 30px;
 }
 
+.accordionContent {
+  padding: 20px;
+}
 
 .accordionContent p {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .accordionPanel {
+    gap: 20px;
+  }
+
+  .accordionPanel h1 {
+    font-size: 45px;
+  }
+
+  .accordionPanel p {
+    font-size: 24px;
+  }
+
+  .accordionContent {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionPanel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .accordionPanel h1 {
+    font-size: 36px;
+  }
+
+  .accordionPanel p {
+    font-size: 20px;
+  }
+
+  .accordionContent {
+    padding: 10px;
+  }
+
+  .accordionContent p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordionPanel h1 {
+    font-size: 28px;
+  }
+
+  .accordionPanel p {
+    font-size: 16px;
+  }
+
+  .accordionContent {
+    padding: 8px;
+  }
+
+  .accordionContent p {
+    margin-top: 8px;
+    font-size: 14px;
+  }
 }

@@ -11,6 +11,7 @@ import {
   OurWorkingProcess,
   Service,
   Team,
+  Testominals,
 } from "./components";
 
 const Home = (): JSX.Element => {
@@ -24,6 +25,7 @@ const Home = (): JSX.Element => {
         <CaseStudies />
         <OurWorkingProcess />
         <Team />
+        <Testominals />
         <ContactUs />
         <Footer />
       </div>

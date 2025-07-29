@@ -6,6 +6,7 @@ import Hero from "./hero/Hero";
 import OurWorkingProcess from "./our-working-process/OurWorkingProcess";
 import Service from "./services/Service";
 import Team from "./team/Team";
+import Testominals from "./testominals/Testominals";
 
 export {
   Hero,
@@ -15,5 +16,6 @@ export {
   OurWorkingProcess,
   Team,
   ContactUs,
-  Footer
+  Footer,
+  Testominals
 };

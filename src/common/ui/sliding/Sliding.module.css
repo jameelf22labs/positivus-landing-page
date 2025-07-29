@@ -1,0 +1,67 @@
+.slidingWrapper {
+  position: relative;
+  padding: 0 60px; 
+  overflow: visible;
+}
+
+.slidingWrapper .slick-slider {
+  overflow: visible;
+}
+
+.slidingWrapper .slick-slide {
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: transform 0.3s, opacity 0.3s;
+  padding: 0 10px;
+}
+
+.slidingWrapper .slick-slide.slick-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slidingWrapper {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slidingSlide {
+  transition: transform 0.3s ease-in-out;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Make the center slide pop out slightly */
+.ant-carousel .slick-center .slidingSlide {
+  transform: scale(1.05);
+}
+
+/* Arrow styles */
+.arrow {
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  color: #1890ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.ant-carousel .slick-prev {
+  left: -50px;
+}
+
+.ant-carousel .slick-next {
+  right: -50px;
+}
