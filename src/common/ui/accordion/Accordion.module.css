@@ -1,0 +1,22 @@
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+
+.customAccordion {
+ border-radius: 45px !important;
+ padding: 20px !important;
+ border: 1px solid #191A23 !important;
+ background-color: #F3F3F3 !important;
+ border-bottom: 7px solid #191A23 !important;
+}
+
+.expandedAccordion {
+  background-color: #b9ff66 !important;
+}
+
+.collapsedAccordion {
+  background-color: #f3f3f3 !important;
+}

@@ -1,0 +1,6 @@
+.wrapper {
+  margin-top: 60px;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding: calc(var(--spacing) * 4);
+}

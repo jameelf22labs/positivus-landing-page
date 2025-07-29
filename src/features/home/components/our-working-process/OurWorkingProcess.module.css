@@ -1,0 +1,32 @@
+
+.accordionWrapper {
+    margin-top: 50px;
+}
+
+.accordionPanel {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.accordionPanel h1 {
+    font-weight: 500;
+    font-size: 60px;
+    color: #000000;
+}
+
+
+.accordionContent {
+    padding: 20px;
+
+}
+
+.accordionPanel p {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.accordionContent p {
+    margin-top: 20px;
+}

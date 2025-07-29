@@ -1,0 +1,88 @@
+.footerWrapper {
+  width: 1341px;
+  height: 450px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: #191a23;
+  padding: 40px;
+  color: white;
+}
+
+.productLogo img {
+  width: 150px;
+  height: auto;
+}
+
+.footerNavbarWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinks ul {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks ul li {
+  text-decoration: underline;
+}
+
+.socialWrapper {
+  display: flex;
+  gap: 18px;
+}
+
+.contactWrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.address {
+  flex: 1;
+}
+
+.emailForm {
+  flex: 1;
+}
+
+.contact {
+  border-radius: 7px;
+  background-color: #b9ff66;
+  padding-right: 7px;
+  padding-left: 7px;
+  width: 126px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.address p {
+  margin-bottom: 10px;
+}
+
+.emailFormInnerWrapper {
+  width: 634px;
+  height: 184px;
+  border-radius: 14px;
+  background-color: #292a32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.emailFormInnerWrapper input {
+  border-radius: 14px;
+  border: 1px solid #ffffff;
+  padding: 22px 35px 22px 35px;
+}
+
+.privacyPolicy {
+    height: 78px;
+    border-top: 3px solid white;
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+
