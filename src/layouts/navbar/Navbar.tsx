@@ -48,16 +48,14 @@ const Navbar = (): JSX.Element => {
           } flex-col md:flex-row md:flex items-center justify-between w-full md:w-auto md:order-1`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:flex-row font-medium md:space-x-8 rtl:space-x-reverse border border-gray-100 md:border-0 rounded-lg p-4 md:p-0 mt-4 md:mt-0 bg-gray-50 md:bg-white">
+          <ul className="flex flex-col w-full md:flex-row font-medium md:space-x-8 rtl:space-x-reverse border border-gray-100 md:border-0 rounded-lg p-4 md:p-0 mt-4 md:mt-0 bg-gray-50 md:bg-white">
             {["About us", "Services", "Use Cases", "Pricing", "Blog"].map(
               (label) => (
                 <li key={label}>
                   <a
                     href="#"
                     className={`block py-2 px-3 rounded-sm md:p-0 ${
-                      label === "About us"
-                        ? "text-blue-600 font-medium"
-                        : "text-gray-800 hover:text-blue-600"
+                      label === "About us" ? " font-medium" : "text-gray-800"
                     }`}
                   >
                     {label}

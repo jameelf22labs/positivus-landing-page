@@ -1,11 +1,14 @@
 .footerWrapper {
-  width: 1341px;
-  height: 450px;
+  width: 100%;
+  max-width: 1341px;
+  min-height: 450px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   background-color: #191a23;
   padding: 40px;
   color: white;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .productLogo img {
@@ -16,15 +19,24 @@
 .footerNavbarWrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
 
 .navLinks ul {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .navLinks ul li {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .socialWrapper {
@@ -35,26 +47,27 @@
 .contactWrapper {
   display: flex;
   margin-top: 50px;
+  flex-wrap: wrap; 
+  gap: 30px;
 }
 
 .address {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .emailForm {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .contact {
   border-radius: 7px;
   background-color: #b9ff66;
-  padding-right: 7px;
-  padding-left: 7px;
-  width: 126px;
+  padding: 5px 7px;
   color: #000000;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 .address p {
@@ -62,27 +75,93 @@
 }
 
 .emailFormInnerWrapper {
-  width: 634px;
-  height: 184px;
+  width: 100%;
+  max-width: 634px;
+  min-height: 184px;
   border-radius: 14px;
   background-color: #292a32;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .emailFormInnerWrapper input {
+  flex: 1 1 200px;
   border-radius: 14px;
   border: 1px solid #ffffff;
-  padding: 22px 35px 22px 35px;
+  padding: 18px 25px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .privacyPolicy {
-    height: 78px;
-    border-top: 3px solid white;
-    margin-top: 60px;
-    display: flex;
-    gap: 20px;
+  height: auto;
+  border-top: 3px solid white;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 
+
+@media (max-width: 1024px) {
+  .footerNavbarWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navLinks ul {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footerWrapper {
+    padding: 30px 20px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .emailFormInnerWrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .emailFormInnerWrapper input {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footerWrapper {
+    padding: 20px 15px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .emailFormInnerWrapper {
+    padding: 15px;
+  }
+
+  .emailFormInnerWrapper input {
+    padding: 15px 20px;
+  }
+}

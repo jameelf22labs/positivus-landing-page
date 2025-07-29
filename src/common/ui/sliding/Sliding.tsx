@@ -1,5 +1,6 @@
 import { type JSX } from "react";
 import { Carousel, type CarouselProps } from "antd";
+import Style from "./Sliding.module.css";
 
 interface SlidingProps<T> {
   items: T[];
@@ -10,18 +11,18 @@ interface SlidingProps<T> {
 const Sliding = <T,>({
   items,
   renderItem,
-  carouselProps = {
-    autoplay: true,
-    autoplaySpeed: 3000,
-    dots: true,
-  },
+  carouselProps,
 }: SlidingProps<T>): JSX.Element => {
   return (
-    <Carousel {...carouselProps}>
-      {items.map((item, index) => (
-        <div key={index}>{renderItem(item, index)}</div>
-      ))}
-    </Carousel>
+    <div className={Style.slidingWrapper}>
+      <Carousel {...carouselProps} centerMode={false} >
+        {items.map((item, index) => (
+          <div className={Style.slidingSlide} key={index}>
+            {renderItem(item, index)}
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 
