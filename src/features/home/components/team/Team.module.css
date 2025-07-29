@@ -1,0 +1,42 @@
+.teamWrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.card {
+    width: 387px;
+    height: 331px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    border-bottom: 4px solid #191A23;
+    padding: 30px;
+}
+
+.linkedIn {
+    display: flex;
+    justify-content: end;
+}
+
+.linkedIn  img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.profileWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.profileImgWrapper img {
+     object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
