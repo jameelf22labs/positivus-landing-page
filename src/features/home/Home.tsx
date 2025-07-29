@@ -6,6 +6,7 @@ import {
   CaseStudies,
   ContactUs,
   Customer,
+  Footer,
   Hero,
   OurWorkingProcess,
   Service,
@@ -41,6 +42,7 @@ const Home = (): JSX.Element => {
         <OurWorkingProcess />
         <Team />
         <ContactUs />
+        <Footer />
       </div>
     </React.Fragment>
   );
