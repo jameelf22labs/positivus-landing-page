@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import React from "react";
 import Style from "./Service.module.css";
+import GlobalStyle from "../../../../style/global.style.module.css";
 
 import seo from "../../../../assets/images/seo.png";
 import ppca from "../../../../assets/images/ppca.png";
@@ -9,6 +10,7 @@ import em from "../../../../assets/images/em.png";
 import aat from "../../../../assets/images/aat.png";
 import cc from "../../../../assets/images/cc.png";
 import ServiceCard from "./ServiceCard";
+import { SectionLabel } from "../../../../common/components";
 
 const Service = (): JSX.Element => {
   const services = React.useMemo(() => {
@@ -53,19 +55,11 @@ const Service = (): JSX.Element => {
   }, []);
   return (
     <React.Fragment>
-      <div className={Style.serviceContainer}>
-        <div className={Style.serviceDescriotion}>
-          <div className={Style.lableContainer}>
-            <h2>Services</h2>
-          </div>
-          <div>
-            <p>
-              At our digital marketing agency, we offer a range of services to{" "}
-              <br />
-              help businesses grow and succeed online. These services include
-            </p>
-          </div>
-        </div>
+      <div className={GlobalStyle.wrapper}>
+        <SectionLabel
+          label="Services"
+          description="At our digital marketing agency, we offer a range of services to  help businesses grow and succeed online. These services include"
+        />
         <div className={Style.servicesBlock}>
           {services.map((service) => {
             return (
